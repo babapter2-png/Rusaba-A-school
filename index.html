@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rusaba A Primary School</title>
+
+<style>
+body {font-family: Arial; margin:0;}
+header {background:#0d47a1; color:white; text-align:center; padding:15px;}
+nav {background:#1976d2; padding:10px; text-align:center;}
+nav a {color:white; margin:10px; text-decoration:none;}
+section {padding:20px;}
+.card {background:#f4f4f4; padding:15px; margin:10px 0; border-radius:8px;}
+footer {background:#0d47a1; color:white; text-align:center; padding:10px;}
+.btn {background:green; color:white; padding:10px; display:inline-block; margin-top:10px; text-decoration:none;}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SHULE YA MSINGI RUSABA A</h1>
+<p>Elimu Bora kwa Maisha Bora</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#matangazo">Matangazo</a>
+<a href="#matokeo">Matokeo</a>
+<a href="#mawasiliano">Mawasiliano</a>
+</nav>
+
+<section>
+<h2>Karibu</h2>
+<p>Karibu kwenye tovuti rasmi ya shule. Pata taarifa zote muhimu hapa.</p>
+</section>
+
+<section id="matangazo">
+<h2>📢 Matangazo</h2>
+
+<div class="card">
+<p>📌 Usajili wa wanafunzi unaendelea</p>
+</div>
+
+<div class="card">
+<p>📌 Mkutano wa wazazi tarehe 10</p>
+</div>
+
+</section>
+
+<section id="matokeo">
+<h2>🧾 Angalia Matokeo</h2>
+
+<input type="text" id="jina" placeholder="Ingiza jina la mwanafunzi">
+<button onclick="tafuta()">Tafuta</button>
+
+<p id="majibu"></p>
+
+<script>
+function tafuta(){
+let jina = document.getElementById("jina").value;
+
+if(jina.toLowerCase() === "john"){
+document.getElementById("majibu").innerHTML = "Wastani: A";
+}else{
+document.getElementById("majibu").innerHTML = "Hakuna taarifa";
+}
+}
+</script>
+
+</section>
+
+<section id="mawasiliano">
+<h2>📞 Mawasiliano</h2>
+<p>Simu: 0769240329</p>
+
+<a class="btn" href="https://wa.me/255769240329">Chat WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 Rusaba A Primary School</p>
+</footer>
+
+</body>
+</html>
